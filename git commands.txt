@@ -1,0 +1,148 @@
+q 			GIT AND GITHUB
+ 
+1)	Locate version control system(LVCS) 
+           -is your home pc 
+problems- lose your laptop
+ 2)     Centralized vicsion control system (CVCS)
+         -is a storage repo where you save your versions
+             problem with CVCS --uploading and downloading code is time exhasted
+              what if the central repository is deleted __> you lose all the version
+ 3) Distribu
+ted version control system (DVCS)
+     - combination of local and centralized version control system
+         in centralized ----> GITHUM.com is beeen used
+	  In local ------> GIT
+git is a software to create local version 
+ and the version are be created in git  
+the version is pushed to centrized version
+
+git is a local repository for local version control
+github is centralized repositrey for centralized version control (cloud storage)
+
+
+				LAB
+-. install git for windows
+download 64 -bt GIT for windown setup
+After git is instore --> create a new folder 
+open the folder right click and select git bash
+ 
+git GUI is graphical user interfer
+    is easy to use but runs slow
+git Bash is a common line interface where we can write command and run fastter
+open git bash and you see you created file ontop of your decktop
+
+fisrt commond to initialize git
+1)--- git init ( #start git) 
+after initializing your git , enter the folder
+click on view and select hidden item 
+***git  will appeal on your folder)
+
+
+git Architecture
+
+ vikdgreat1 is the working directory 
+file goes from working directory to staging area which is a temporary 
+storage to keep file to be put in local repo
+
+all file in staging area (waiting area)goes to local repo (store the file in local repository) 
+LOCAL repository have v1 v2 v3
+
+directory is a folder 
+repository is a storage.
+
+				LAB in gitbash
+create files in git bash 
+# touch is a command to creat file 
+
+git status is to check the file/status of git 
+all file all in working directory and awit to be pushed to staging area.
+
+       git status
+red : file in working directory and backed
+green : file in staging area
+Nobody: file in local repository
+
+Before we push file to staging area. we need to infor git who is working
+	 2)git config --global user.name victor
+ 	3)git config --global user.email
+	4)git git config --list (see ur name and email0 press q to quit
+	( create blank file in staging 
+	5)touch file1 file2 file3 file4
+	6)Git status   ( will give you the status of ur git repo)git status
+	7)get add. --> will put all files from Dir to the staging area.
+             (get add file name move only file to staging area)
+		(green is staging area)
+  
+ 8)git commit -m" created newfile
+   (this command move file from staging area to local repo)
+ git status: nothing to commit
+9) make some chages in file1 n file2 in the folder
+10)git status you see file1 and file2 are modified
+11) git add . (files move back to staging area)
+12) git commit -m"second commit
+12) git status
+
+13) git loggit log ( this will give the log of your commit)
+14)git log oneline  ( this will give imp details of log on oneline)
+
+
+####################ignoring file in git################
+
+15) create a file : 
+	touch error.log
+   (git status)
+16)touch .gitignore 
+17)open .gitignore file in the folder and add error.log in .gitignore
+18)git status and error.log is gone
+
+add .gitinore to staging to local repo
+19) git add .
+20) git commit -m"put the gitignore to local repo)
+
+modify error.log in the folder and check status and nothing will show cuz 
+it ignoring error.log
+  got copy error.log file time and modify the file
+check status and you will see error.log been modified
+to stop the error coming up 
+go to .gitignored file and add *.log (save)
+check statue in git and errors gone 
+git add .  and commit .gitignored to local repo
+
+#####################GITHUB############################
+   how to move file from working dir to github
+  able to move all files from v1 v2 v3 in local repo to github.com
+
+1) first create github acc and repo
+
+2) copy from github and paste in git : 
+ git remote add origin https://github.com/vikdgreat/vikdgreat.gitGIT REMOTE 
+   any thing to pull/fetch go through github
+3) git remote -v ( to see all repo is there) 
+4)git push -u origin master ( push you to master )
+   when you enter this command it will request authication 
+for github access or token 
+ i will generate a token to log onto github n give to 
+emplyee so they can have access to github repository
+  HOW to create token for githug repository
+>>> go to githib.com (ur aac) 
+>>> click on signed in tab and select setting
+>>> scroke down and click on Developer setting
+>>> lower right of the page(UI)
+>>>click on developer setting
+>>>click on Personal access token and accept clasicc token
+>>> generate new token
+>>>enter token name
+>>>click classic n scrow
+click generate and toekn will generate
+# copy the token 
+#paste on git bash repo
+
+ check ur github.com repo to see all the create files from local repo
+
+3##########HOW TO  CLONE#########
+
+1)git clone <<repo link>>     # this will clone the repo..
+
+ 
+
+
